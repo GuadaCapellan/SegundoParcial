@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    color: white;
+    background-color: #1B1B1B;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9C9C9C;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    padding: 10px 15px; 
+}
+
+nav a:hover {
+    color: #FFFFFF; 
+}
+.Active{
+    color: #FFFFFF;
+    
+}
+.galeria {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria h1 {
+    margin-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.superimposed-image {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-contenedor {
+    position: relative;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagen-contenedor {
+        width: 100%;
+    }
+
+    .superimposed-image {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        padding: 10px;
+    }
+
+    .galeria h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
